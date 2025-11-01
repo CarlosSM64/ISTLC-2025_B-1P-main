@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Registro de Trabajador</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label title="foto" for="">Foto: <input type="file" accept=".jpg"></label><br><br>
+            <label title="nombre" for="nombre">Nombre: <input placeholder="Escribe tu nombre" name="nombre" input="text" required></label>&nbsp;&nbsp;
+            <label title="Obligatorio" for="apellido">Apellido: <input placeholder="Escribe tu apellido" name="apellido" type="text" required></label><br><br>
+            <label title="cedula" for="apellido">Identificación: <input placeholder="Escibe tu cedula" name="cedula" type="text" minlength="10" maxlength="10"></label>
+            <br><br>
+            <div>
+               <Label for="">Edad: <input name="edad" type="number" min="1" max="100" required placeholder="Rellene"></Label> 
+            </div>
+            <br>
+            <label for="">Fecha de Nacimiento: <input name="fecha" type="date" required></label>
+            <br><br>
+            <label for="">Sueldo: <input placeholder="Ingrese sueldo" type="number" step="500"></label>
+            <br><br>
+            <label for="">Sexo:</label>
+            <label for="">Masculino<input type="radio" name="genero" value="masculino"></label>
+            <label for="">Femenino<input type="radio" name="genero" value="femenino"></label>
+            <br><br>
+            <label for="">Idioma:</label>
+            <br>
+            <label for ="">Español<input type="checkbox" name="idioma" value="espanol"></label>
+            <label for ="">Ingles<input type="checkbox" name="idioma" value="ingles"></label>
+            <br><br>
+            <Label for="">Nacionalidad:
+                <select name="" id="">
+                    <option value="ecuador">Ecuador</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="chile">Chile</option>
+                </select>
+            </Label>
+            <br><br>
+            <button type="submit">Enviar Fomulario</button>
+        </fieldset>
+    </form>
+</body>
+</html>
